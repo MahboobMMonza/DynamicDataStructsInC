@@ -1,4 +1,4 @@
-#include "dynamic_deque.h"
+#include "src/dynamic_deque.h"
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
