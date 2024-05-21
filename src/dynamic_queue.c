@@ -1,5 +1,5 @@
-#include "dynamic_queue.h"
-#include "dynamic_deque.h"
+#include "../inc/dynamic_queue.h"
+#include "../inc/dynamic_deque.h"
 #include <stdlib.h>
 
 DynamicQueue dynamic_queue_init(size_t buf_size, const size_t data_size) {

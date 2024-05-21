@@ -1,4 +1,4 @@
-#include "dynamic_deque.h"
+#include "../inc/dynamic_deque.h"
 #include <stdlib.h>
 #include <string.h>
 

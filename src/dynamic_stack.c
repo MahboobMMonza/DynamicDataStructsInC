@@ -1,5 +1,5 @@
-#include "dynamic_stack.h"
-#include "dynamic_deque.h"
+#include "../inc/dynamic_stack.h"
+#include "../inc/dynamic_deque.h"
 #include <stdlib.h>
 
 DynamicStack dynamic_stack_init(size_t buf_size, const size_t data_size) {
