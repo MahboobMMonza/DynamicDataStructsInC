@@ -17,6 +17,7 @@ extern size_t dynamic_deque_length(DynamicDeque *dq);
 extern size_t dynamic_deque_data_size(DynamicDeque *dq);
 extern void *dynamic_deque_peek_front(DynamicDeque *dq);
 extern void *dynamic_deque_peek_back(DynamicDeque *dq);
+extern void dynamic_deque_clear(DynamicDeque *dq);
 extern void dynamic_deque_destroy(DynamicDeque *dq);
 
 #endif // DYNAMIC_DEQUE_H

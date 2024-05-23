@@ -22,4 +22,6 @@ size_t dynamic_queue_data_size(DynamicQueue *q) { return dynamic_deque_data_size
 
 void *dynamic_queue_peek(DynamicQueue *q) { return dynamic_deque_peek_front((DynamicDeque *)q); }
 
+void dynamic_queue_clear(DynamicQueue *q) { dynamic_deque_clear((DynamicDeque *)q); }
+
 void dynamic_queue_destroy(DynamicQueue *q) { dynamic_deque_destroy((DynamicDeque *)q); }

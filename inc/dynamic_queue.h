@@ -14,6 +14,7 @@ extern size_t dynamic_queue_capacity(DynamicQueue *q);
 extern size_t dynamic_queue_length(DynamicQueue *q);
 extern size_t dynamic_queue_data_size(DynamicQueue *q);
 extern void *dynamic_queue_peek(DynamicQueue *q);
+extern void dynamic_queue_clear(DynamicQueue *q);
 extern void dynamic_queue_destroy(DynamicQueue *q);
 
 #endif // DYNAMIC_QUEUE_H

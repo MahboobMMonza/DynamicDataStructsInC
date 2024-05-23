@@ -22,4 +22,6 @@ size_t dynamic_stack_data_size(DynamicStack *q) { return dynamic_deque_data_size
 
 void *dynamic_stack_peek(DynamicStack *q) { return dynamic_deque_peek_back((DynamicDeque *)q); }
 
+void dynamic_stack_clear(DynamicStack *q) { dynamic_deque_clear((DynamicDeque *)q); }
+
 void dynamic_stack_destroy(DynamicStack *q) { dynamic_deque_destroy((DynamicDeque *)q); }

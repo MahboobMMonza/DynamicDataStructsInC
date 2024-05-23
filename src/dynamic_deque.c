@@ -149,6 +149,12 @@ void *dynamic_deque_peek_back(DynamicDeque *dq) {
     return internals->__data_buf + (internals->__tail * internals->__data_size);
 }
 
+void dynamic_deque_clear(DynamicDeque *dq) {
+    ddq_internals *internals = dq->internals;
+    memset(internals->__data_buf, '\0', internals->__data_size * internals->__capacity);
+    internals->__head = internals->__tail = internals->__len = 0;
+}
+
 void dynamic_deque_destroy(DynamicDeque *dq) {
     ddq_internals *internals = dq->internals;
     free(internals->__data_buf);

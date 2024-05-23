@@ -14,6 +14,7 @@ extern size_t dynamic_stack_capacity(DynamicStack *q);
 extern size_t dynamic_stack_length(DynamicStack *q);
 extern size_t dynamic_stack_data_size(DynamicStack *q);
 extern void *dynamic_stack_peek(DynamicStack *q);
+extern void dynamic_stack_clear(DynamicStack *q);
 extern void dynamic_stack_destroy(DynamicStack *q);
 
 #endif // DYNAMIC_QUEUE_H
