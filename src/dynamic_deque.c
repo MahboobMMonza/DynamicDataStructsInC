@@ -35,9 +35,9 @@ int __reallocate_data_buffer(DynamicDeque *dq) {
                internals->__head * internals->__data_size);
         internals->__tail = internals->__head + internals->__len - 1;
     }
-    if (internals->__head > internals->__capacity / 2) {
-        memmove(internals->__data_buf + ((internals->__capacity / 4) * internals->__data_size), internals->__data_buf + (internals->__head * internals->__data_size), internals->__data_size * internals->__len);
-        internals->__head = internals->__capacity / 4;
+    if (internals->__head > (internals->__capacity >> 1)) {
+        memmove(internals->__data_buf + ((internals->__capacity >> 2) * internals->__data_size), internals->__data_buf + (internals->__head * internals->__data_size), internals->__data_size * internals->__len);
+        internals->__head = internals->__capacity >> 2;
         internals->__tail = internals->__head + internals->__len - 1;
     }
     return 0;
